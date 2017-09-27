@@ -11,3 +11,15 @@ iex -S mix
 Math.factorial(5)
 ```
 
+## Ejecutar tests de unidad
+Los tests de unidad pueden ser ejecutados en conjunto
+
+```bash
+mix test
+```
+
+O pueden ser ejecutados individualmente 
+```bash
+mix test test/dsl_test.exs:5
+```
+
