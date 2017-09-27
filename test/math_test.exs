@@ -14,8 +14,9 @@ defmodule MathTest do
     assert Math.factorial(4) == 24
   end
 
-  test "factorial invalid for negative numbers" do
-    assert Math.factorial(-1) == 24
+  test "factorial show error for negative numbers" do
+    assert_raise ArithmeticError, fn ->
+      Math.factorial(-1)
+    end
   end
-
 end
